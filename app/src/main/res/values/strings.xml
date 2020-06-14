@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ConvertCurrency</string>
+    <string name="originalCurrency">Tiền nguồn: </string>
+    <string name="destinationCurrency">Tiền đích: </string>
+    <string name="convertButton">Đổi tiền</string>
+    <string name="hintOriginal">Nhập số tiền cần đổi</string>
+    <string name="hintDestination">Kết quả</string>
+    <string name="buttonConvert">Đổi tiền</string>
 </resources>

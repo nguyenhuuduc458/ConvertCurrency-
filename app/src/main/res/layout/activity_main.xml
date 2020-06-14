@@ -1,18 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/textViewOriginalCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="4dp"
+            android:text="@string/originalCurrency"
+            android:textColor="@color/BurlyWood"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="1dp"
+            app:cardCornerRadius="10dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+            <Spinner
+                android:id="@+id/spinnerOriginalCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTexOriginalCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/hintOriginal"
+        android:backgroundTint="@color/BurlyWood"
+        android:ems="10"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:hint="@string/hintOriginal"
+        android:inputType="numberDecimal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textViewDestinationCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="4dp"
+            android:text="@string/destinationCurrency"
+            android:textColor="@color/BurlyWood"
+            android:textSize="25sp"
+           />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="1dp"
+            app:cardCornerRadius="10dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:layout_marginLeft="15dp"
+            android:thicknessRatio="1.9">
+            <Spinner
+                android:id="@+id/spinnerDestinationCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/hintDestination"
+        android:backgroundTint="@color/BurlyWood"
+        android:ems="10"
+        android:textSize="25sp"
+        android:enabled="false"
+        android:hint="@string/hintDestination"
+        android:inputType="textPersonName"
+        />
+        <Button
+            android:id="@+id/buttonConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="15dp"
+            android:text="@string/buttonConvert"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="100dp"
+            android:background="@drawable/custome_button"
+            android:textColor="@drawable/custome_textcolor_button"
+         />
+</LinearLayout>
+
+</ScrollView>
