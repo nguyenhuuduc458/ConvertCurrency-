@@ -15,12 +15,14 @@ public class CountryServices {
     public List<String> getAllCountryName(){
         List<String> names = new ArrayList<>();
         for(Country item: mListCountry){
-            names.add(item.getName());
+            names.add(item.getCode() + "-" + item.getName());
         }
         return names;
     }
 
-    public String getCountryCode(String countryName){
+    public String getCurrencyCode(String countryNameAndCode){
+        String[] tempt = countryNameAndCode.split("-");
+        String countryName = tempt[1];
         for(Country item: mListCountry){
             if(item.getName().equals(countryName)){
                 return item.getCode();

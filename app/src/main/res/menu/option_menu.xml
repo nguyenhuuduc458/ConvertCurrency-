@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/icons8_recurring_appointment_32"
+        android:id="@+id/refreshPage" />
+</menu>

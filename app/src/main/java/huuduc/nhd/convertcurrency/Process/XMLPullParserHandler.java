@@ -24,6 +24,7 @@ public class XMLPullParserHandler {
     private String  text        = "";
     private String  title       = "";
 
+
     public List<Country> parseCountry(InputStream inputStream){
         try {
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();

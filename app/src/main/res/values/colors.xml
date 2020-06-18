@@ -143,4 +143,5 @@
     <color name="White">#FFFFFF</color>
     <color name="Ivory">#FFFFF0</color>
     <color name="LightYellow">#FFFFE0</color>
+    <color name="transparent">#80FFFFFF</color>
 </resources>

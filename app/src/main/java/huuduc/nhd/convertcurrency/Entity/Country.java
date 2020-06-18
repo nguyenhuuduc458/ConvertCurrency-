@@ -1,6 +1,6 @@
 package huuduc.nhd.convertcurrency.Entity;
 
-public class Country implements Comparable<Country> {
+public class Country{
     private String name;
     private String code;
 
@@ -31,10 +31,5 @@ public class Country implements Comparable<Country> {
                 "name='" + name + '\'' +
                 ", code='" + code + '\'' +
                 '}';
-    }
-
-    @Override
-    public int compareTo(Country country) {
-        return this.name.compareTo(country.getName());
     }
 }
