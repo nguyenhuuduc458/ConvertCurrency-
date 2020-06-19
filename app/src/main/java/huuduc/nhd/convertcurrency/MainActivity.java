@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void hideProgressDialog(){
         mDialog.dismiss();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.option_menu,menu);
@@ -299,7 +300,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         protected void onProgressUpdate(List<Currency>... values) {
             String[] tempt = destinationCountryName.split("-");
             String destinationCountryName = tempt[1].trim();
-
             CurrencyServices services = new CurrencyServices(values[0]);
             Double exchangeRate       = services.getCurrency(destinationCountryName);
             Double result             = services.convertCurrency(money,exchangeRate);

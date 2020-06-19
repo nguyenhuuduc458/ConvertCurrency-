@@ -121,8 +121,8 @@
             android:textSize="19sp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="100dp"
-            android:background="@drawable/custome_button"
-            android:textColor="@drawable/custome_textcolor_button"
+            android:background="@drawable/custom_button"
+            android:textColor="@drawable/custom_textcolor_button"
          />
 
 
